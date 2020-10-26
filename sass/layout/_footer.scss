@@ -1,0 +1,149 @@
+.footer {
+  display: block;
+  margin: 0 auto;
+  width: 1600px;
+  height: 252px;
+  background-color: #2f303a;
+}
+
+.address-footer {
+  font-style: normal;
+  margin-top: 20px;
+}
+
+.footer-list-item {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  &:not(:first-child) {
+    margin-top: 9px;
+  }
+}
+.footer-link-item {
+  color: #ffffff;
+}
+.footer-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.footer-box {
+  margin-right: 70px;
+}
+.social-list-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 206px;
+
+  margin-top: 20px;
+}
+.social-list-link-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+
+.social-list-svg-footer {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+
+.footer-form-wrapper {
+  display: flex;
+  align-items: center;
+  min-width: 570px;
+  height: 86px;
+  margin-left: 93px;
+}
+
+.footer-wrapper {
+  display: block;
+}
+.footer-form-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.footer-input {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  padding-left: 16px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn-footer-form {
+  width: 200px;
+  height: 50px;
+  background: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  margin-left: 12px;
+
+  position: relative;
+
+  &:focus {
+    outline: none;
+  }
+}
+.footer-btn-text {
+  display: flex;
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+  margin-left: 29px;
+}
+
+.footer-btn-svg {
+  position: absolute;
+  top: 13px;
+  right: 28px;
+  fill: #ffffff;
+}
