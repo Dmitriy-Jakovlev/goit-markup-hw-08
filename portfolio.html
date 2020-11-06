@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./css/portfolio.min.css" />
   </head>
   <body>
-    <!--HEADER-->
+    <!--HEADER
 
     <header class="header">
       <div class="container">
@@ -52,17 +52,17 @@
         </ul>
       </div>
     </header>
-
+-->
     <!--MAIN-->
 
     <main class="section">
-      <div class="container">
-        <h1 hidden>Портфолио</h1>
+      
+        <h1 class="visually-hidden">Портфолио</h1>
 
         <!--BTN-->
 
-        <section>
-          <h2 hidden>filters</h2>
+        <section class="filters container">
+          <h2 class="visually-hidden">filters</h2>
           <ul class="list-btn list">
             <li class="list-btn-item">
               <button class="btn-filters" type="button">Все</button>
@@ -85,16 +85,25 @@
         <!--ASIDE-->
 
         <section class="aside">
+          <div class="container">
           <ul class="aside-list list">
             <li class="aside-list-item">
               <a class="aside-list-link link" href=""
                 >
                 <div class="accent-img">
-                  <img
-                  class="aside-img"
-                  src="./images/portfolio/portfolio-1.jpg"
-                  alt="сайт на ноутбуке"
-                />
+                  <picture>
+                    <source srcset="./images/portfolio/portfolio-desktop-1.jpg 1x, ./images/portfolio/portfolio-desktop-1@2x.jpg 2x"
+                      media="(min-width:1200px)">
+                  
+                    <source srcset="./images/portfolio/portfolio-tablet-1.jpg 1x, ./images/portfolio/portfolio-tablet-1@2x.jpg 2x"
+                      media="(min-width:768px)">
+                  
+                    <source srcset="./images/portfolio/portfolio-mobile-1.jpg 1x, ./images/portfolio/portfolio-mobile-1@2x.jpg 2x"
+                      media="(min-width:320px)">
+                  
+                    <img class="aside-img" src="./images/portfolio/portfolio-mobile-1.jpg" alt="сайт на ноутбуке" />
+                  </picture>
+                  
                 <div class="aside-text-accent">
                 <p class="text-accent">
                   Технокряк это современная площадка распространения
@@ -111,7 +120,18 @@
             <li class="aside-list-item">
               <a class="aside-list-link link" href=""
                 ><div class="accent-img">
-                  <img class="aside-img" src="./images/portfolio/portfolio-2.jpg" alt="сайт на ноутбуке" />
+                  <picture>
+                    <source srcset="./images/portfolio/portfolio-desktop-2.jpg 1x, ./images/portfolio/portfolio-desktop-2@2x.jpg 2x"
+                      media="(min-width:1200px)">
+                  
+                    <source srcset="./images/portfolio/portfolio-tablet-2.jpg 1x, ./images/portfolio/portfolio-tablet-2@2x.jpg 2x"
+                      media="(min-width:768px)">
+                  
+                    <source srcset="./images/portfolio/portfolio-mobile-2.jpg 1x, ./images/portfolio/portfolio-mobile-2@2x.jpg 2x"
+                      media="(min-width:320px)">
+                  
+                    <img class="aside-img" src="./images/portfolio/portfolio-mobile-2.jpg" alt="сайт на ноутбуке" />
+                  </picture>
                   <div class="aside-text-accent">
                     <p class="text-accent">
                       Технокряк это современная площадка распространения
@@ -130,7 +150,18 @@
             <li class="aside-list-item">
               <a class="aside-list-link link" href=""
                 ><div class="accent-img">
-                  <img class="aside-img" src="./images/portfolio/portfolio-3.jpg" alt="сайт на ноутбуке" />
+                  <picture>
+                    <source srcset="./images/portfolio/portfolio-desktop-3.jpg 1x, ./images/portfolio/portfolio-desktop-3@2x.jpg 2x"
+                      media="(min-width:1200px)">
+                  
+                    <source srcset="./images/portfolio/portfolio-tablet-3.jpg 1x, ./images/portfolio/portfolio-tablet-3@2x.jpg 2x"
+                      media="(min-width:768px)">
+                  
+                    <source srcset="./images/portfolio/portfolio-mobile-3.jpg 1x, ./images/portfolio/portfolio-mobile-3@2x.jpg 2x"
+                      media="(min-width:320px)">
+                  
+                    <img class="aside-img" src="./images/portfolio/portfolio-mobile-3.jpg" alt="сайт на ноутбуке" />
+                  </picture>
                   <div class="aside-text-accent">
                     <p class="text-accent">
                       Технокряк это современная площадка распространения
@@ -149,7 +180,18 @@
             <li class="aside-list-item">
               <a class="aside-list-link link" href=""
                 ><div class="accent-img">
-                  <img class="aside-img" src="./images/portfolio/portfolio-4.jpg" alt="сайт на ноутбуке" />
+                  <picture>
+                    <source srcset="./images/portfolio/portfolio-desktop-4.jpg 1x, ./images/portfolio/portfolio-desktop-4@2x.jpg 2x"
+                      media="(min-width:1200px)">
+                  
+                    <source srcset="./images/portfolio/portfolio-tablet-4.jpg 1x, ./images/portfolio/portfolio-tablet-4@2x.jpg 2x"
+                      media="(min-width:768px)">
+                  
+                    <source srcset="./images/portfolio/portfolio-mobile-4.jpg 1x, ./images/portfolio/portfolio-mobile-4@2x.jpg 2x"
+                      media="(min-width:320px)">
+                  
+                    <img class="aside-img" src="./images/portfolio/portfolio-mobile-4.jpg" alt="сайт на ноутбуке" />
+                  </picture>
                   <div class="aside-text-accent">
                     <p class="text-accent">
                       Технокряк это современная площадка распространения
@@ -166,7 +208,18 @@
             <li class="aside-list-item">
               <a class="aside-list-link link" href=""
                 ><div class="accent-img">
-                  <img class="aside-img" src="./images/portfolio/portfolio-5.jpg" alt="сайт на ноутбуке" />
+                  <picture>
+                    <source srcset="./images/portfolio/portfolio-desktop-5.jpg 1x, ./images/portfolio/portfolio-desktop-5@2x.jpg 2x"
+                      media="(min-width:1200px)">
+                  
+                    <source srcset="./images/portfolio/portfolio-tablet-5.jpg 1x, ./images/portfolio/portfolio-tablet-5@2x.jpg 2x"
+                      media="(min-width:768px)">
+                  
+                    <source srcset="./images/portfolio/portfolio-mobile-5.jpg 1x, ./images/portfolio/portfolio-mobile-5@2x.jpg 2x"
+                      media="(min-width:320px)">
+                  
+                    <img class="aside-img" src="./images/portfolio/portfolio-mobile-5.jpg" alt="сайт на ноутбуке" />
+                  </picture>
                   <div class="aside-text-accent">
                     <p class="text-accent">
                       Технокряк это современная площадка распространения
@@ -183,7 +236,18 @@
             <li class="aside-list-item">
               <a class="aside-list-link link" href=""
                 ><div class="accent-img">
-                  <img class="aside-img" src="./images/portfolio/portfolio-6.jpg" alt="сайт на ноутбуке" />
+                  <picture>
+                    <source srcset="./images/portfolio/portfolio-desktop-6.jpg 1x, ./images/portfolio/portfolio-desktop-6@2x.jpg 2x"
+                      media="(min-width:1200px)">
+                  
+                    <source srcset="./images/portfolio/portfolio-tablet-6.jpg 1x, ./images/portfolio/portfolio-tablet-6@2x.jpg 2x"
+                      media="(min-width:768px)">
+                  
+                    <source srcset="./images/portfolio/portfolio-mobile-6.jpg 1x, ./images/portfolio/portfolio-mobile-6@2x.jpg 2x"
+                      media="(min-width:320px)">
+                  
+                    <img class="aside-img" src="./images/portfolio/portfolio-mobile-6.jpg" alt="сайт на ноутбуке" />
+                  </picture>
                 <div class="aside-text-accent">
                   <p class="text-accent">
                     Технокряк это современная площадка распространения
@@ -202,7 +266,18 @@
             <li class="aside-list-item">
               <a class="aside-list-link link" href=""
                 ><div class="accent-img">
-                  <img class="aside-img" src="./images/portfolio/portfolio-7.jpg" alt="сайт на ноутбуке" />
+                  <picture>
+                    <source srcset="./images/portfolio/portfolio-desktop-7.jpg 1x, ./images/portfolio/portfolio-desktop-7@2x.jpg 2x"
+                      media="(min-width:1200px)">
+                  
+                    <source srcset="./images/portfolio/portfolio-tablet-7.jpg 1x, ./images/portfolio/portfolio-tablet-7@2x.jpg 2x"
+                      media="(min-width:768px)">
+                  
+                    <source srcset="./images/portfolio/portfolio-mobile-7.jpg 1x, ./images/portfolio/portfolio-mobile-7@2x.jpg 2x"
+                      media="(min-width:320px)">
+                  
+                    <img class="aside-img" src="./images/portfolio/portfolio-mobile-7.jpg" alt="сайт на ноутбуке" />
+                  </picture>
                   <div class="aside-text-accent">
                     <p class="text-accent">
                       Технокряк это современная площадка распространения
@@ -221,7 +296,18 @@
             <li class="aside-list-item">
               <a class="aside-list-link link" href=""
                 ><div class="accent-img">
-                  <img class="aside-img" src="./images/portfolio/portfolio-8.jpg" alt="сайт на ноутбуке" />
+                <picture>
+                  <source srcset="./images/portfolio/portfolio-desktop-8.jpg 1x, ./images/portfolio/portfolio-desktop-8@2x.jpg 2x"
+                    media="(min-width:1200px)">
+                
+                  <source srcset="./images/portfolio/portfolio-tablet-8.jpg 1x, ./images/portfolio/portfolio-tablet-8@2x.jpg 2x"
+                    media="(min-width:768px)">
+                
+                  <source srcset="./images/portfolio/portfolio-mobile-8.jpg 1x, ./images/portfolio/portfolio-mobile-8@2x.jpg 2x"
+                    media="(min-width:320px)">
+                
+                  <img class="aside-img" src="./images/portfolio/portfolio-mobile-8.jpg" alt="сайт на ноутбуке" />
+                </picture>
                   <div class="aside-text-accent">
                     <p class="text-accent">
                       Технокряк это современная площадка распространения
@@ -238,7 +324,18 @@
             <li class="aside-list-item">
               <a class="aside-list-link link" href=""
                 ><div class="accent-img">
-                  <img class="aside-img" src="./images/portfolio/portfolio-9.jpg" alt="сайт на ноутбуке" />
+                  <picture>
+                    <source srcset="./images/portfolio/portfolio-desktop-9.jpg 1x, ./images/portfolio/portfolio-desktop-9@2x.jpg 2x"
+                      media="(min-width:1200px)">
+                  
+                    <source srcset="./images/portfolio/portfolio-tablet-9.jpg 1x, ./images/portfolio/portfolio-tablet-9@2x.jpg 2x"
+                      media="(min-width:768px)">
+                  
+                    <source srcset="./images/portfolio/portfolio-mobile-9.jpg 1x, ./images/portfolio/portfolio-mobile-9@2x.jpg 2x"
+                      media="(min-width:320px)">
+                  
+                    <img class="aside-img" src="./images/portfolio/portfolio-mobile-9.jpg" alt="сайт на ноутбуке" />
+                  </picture>
                   <div class="aside-text-accent">
                     <p class="text-accent">
                       Технокряк это современная площадка распространения
@@ -253,8 +350,9 @@
               </a>
             </li>
           </ul>
+          </div>
         </section>
-      </div>
+      
     </main>
 
     <!--FOOTER-->

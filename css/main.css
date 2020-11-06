@@ -275,7 +275,7 @@ img {
   padding-top: 10px;
 }
 
-.form-label:hover, .form-label:focus {
+.form-label:focus {
   color: #2196f3;
 }
 
@@ -656,6 +656,8 @@ li:hover .header-smartphone-icon {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
   .hero-title {
     font-size: 44px;
@@ -1418,6 +1420,9 @@ li:hover .header-smartphone-icon {
     top: 13px;
     right: 28px;
     fill: #ffffff;
+  }
+  .address-footer {
+    margin-top: 20px;
   }
 }
 /*# sourceMappingURL=main.css.map */
