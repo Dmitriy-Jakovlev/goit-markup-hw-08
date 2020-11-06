@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./css/main.min.css"/>
   </head>
   <body>
-    <!-- HEADER -->
+    <!-- HEADER 
 
     <header class="header">
       <div class="container">
@@ -23,60 +23,70 @@
           <a class="logo link" href="./index.html"
             ><span class="logo-caption">Web</span>Studio</a
           >
+<button type="button" class="menu-button is-open" aria-controls="menu-container" data-menu-button>
+  <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+    <use class="icon-cross" href="./images/sprite.svg#cross"></use>
+    <use class="icon-menu" href="./images/sprite.svg#menu"></use>
+  </svg>
+</button>
+<div class="menu-container" id="menu-container" data-menu>
 
-          <ul class="navigation-list list">
-            <li class="navigation-list-item">
-              <a class="navigation-list-link link studio" href="./index.html"
-                >Студия</a
-              >
-            </li>
-            <li class="navigation-list-item">
-              <a class="navigation-list-link link" href="portfolio.html"
-                >Портфолио</a
-              >
-            </li>
-            <li class="navigation-list-item">
-              <a class="navigation-list-link link" href="">Контакты</a>
-            </li>
-          </ul>
+
+<ul class="navigation-list list">
+  <li class="navigation-list-item">
+    <a class="navigation-list-link link studio" href="./index.html">Студия</a>
+  </li>
+  <li class="navigation-list-item">
+    <a class="navigation-list-link link" href="portfolio.html">Портфолио</a>
+  </li>
+  <li class="navigation-list-item">
+    <a class="navigation-list-link link" href="">Контакты</a>
+  </li>
+</ul>
+
+          
+        
+
+<ul class="address-list list">
+  <li class="address-list-item">
+    <a href="mailto:info@devstudio.com" class="header-address-link link"><svg class="header-envelope-icon">
+        <use href="./images/sprite.svg#envelope"></use>
+      </svg>
+      info@devstudio.com</a>
+  </li>
+  <li class="address-list-item">
+    <a href="tel:+380961111111" class="header-address-link link">
+      <svg class="header-smartphone-icon">
+        <use href="./images/sprite.svg#smartphone"></use>
+      </svg>
+      +38 096 111 11 11</a>
+  </li>
+</ul>
+
+        
+        </div>
         </nav>
-
-        <ul class="address-list list">
-          <li class="address-list-item">
-            <a href="mailto:info@devstudio.com" class="header-address-link link"
-              ><svg class="header-envelope-icon">
-                <use href="./images/sprite.svg#envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="address-list-item">
-            <a href="tel:+380961111111" class="header-address-link">
-              <svg class="header-smartphone-icon">
-                <use href="./images/sprite.svg#smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
       </div>
     </header>
-
-    <!--MAIN-->
+-->
+   
+<!--MAIN-->
 
     <main class="main">
-      <!-- HERO -->
+
+
+      <!-- HERO-->
 
       <section class="hero">
-        <div class="container">
-          <div class="pic">
-            <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+        <div class="container">          
+            <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
             <button class="modal-btn" type="button" data-modal-open>
               Заказать услугу
-            </button>
-          </div>
+            </button>        
         </div>
       </section>
+
+
 
       <!--FEATURES-->
 
@@ -115,6 +125,8 @@
           </ul>
         </div>
       </section>
+
+      
 
       <!--ACTIVITY-->
 
@@ -157,6 +169,8 @@
         </div>
       </section>
 
+      
+
       <!--OUR TEAM-->
 
       <section class="team section">
@@ -164,11 +178,17 @@
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-list-item">
-              <img
-                class="team-list-img"
-                src="./images/our_team/team_card_1.jpg"
-                alt=""
-              />
+              <picture>
+                <source srcset="./images/our_team/team-card-desktop-1.jpg 1x, ./images/our_team/team-card-desktop-1@2x.jpg 2x"
+                  media="(min-width:1200px)">
+                <source srcset="./images/our_team/team-card-tablet-1.jpg 1x, ./images/our_team/team-card-tablet-1@2x.jpg 2x"
+                  media="(min-width:768px)">
+                <source srcset="./images/our_team/team-card-mobile-1.jpg 1x, ./images/our_team/team-card-mobile-1@2x.jpg 2x" 
+                media="(min-width:320px)"> 
+
+                <img class="team-list-img" src="./images/our_team/team-card-mobile-1.jpg" alt="" />
+              </picture>
+              
               <h3 class="team-list-title">Игорь Демьяненко</h3>
               <p class="team-list-subtitle" lang="en">Product Designer</p>
 
@@ -207,11 +227,17 @@
               </ul>
             </li>
             <li class="team-list-item">
-              <img
-                class="team-list-img"
-                src="./images/our_team/team_card_2.jpg"
-                alt=""
-              />
+              <picture>
+                
+                  <source srcset="./images/our_team/team-card-desktop-2.jpg 1x, ./images/our_team/team-card-desktop-2@2x.jpg 2x"
+                    media="(min-width:1200px)">
+                <source srcset="./images/our_team/team-card-tablet-2.jpg 1x, ./images/our_team/team-card-tablet-2@2x.jpg 2x"
+                  media="(min-width:768px)">
+                <source srcset="./images/our_team/team-card-mobile-2.jpg 1x, ./images/our_team/team-card-mobile-2@2x.jpg 2x"
+                  media="(max-width:767px)">
+              
+                <img class="team-list-img" src="./images/our_team/team-card-mobile-2.jpg" alt="" />
+              </picture>
               <h3 class="team-list-title">Ольга Репина</h3>
               <p class="team-list-subtitle" lang="en">Frontend Developer</p>
               <ul class="social-list list">
@@ -249,11 +275,17 @@
               </ul>
             </li>
             <li class="team-list-item">
-              <img
-                class="team-list-img"
-                src="./images/our_team/team_card_3.jpg"
-                alt=""
-              />
+              <picture>
+                
+                  <source srcset="./images/our_team/team-card-desktop-3.jpg 1x, ./images/our_team/team-card-desktop-3@2x.jpg 2x"
+                    media="(min-width:1200px)">
+                <source srcset="./images/our_team/team-card-tablet-3.jpg 1x, ./images/our_team/team-card-tablet-3@2x.jpg 2x"
+                  media="(min-width:768px)">
+                <source srcset="./images/our_team/team-card-mobile-3.jpg 1x, ./images/our_team/team-card-mobile-3@2x.jpg 2x"
+                  media="(max-width:767px)">
+              
+                <img class="team-list-img" src="./images/our_team/team-card-mobile-3.jpg" alt="" />
+              </picture>
               <h3 class="team-list-title">Николай Тарасов</h3>
               <p class="team-list-subtitle" lang="en">Marketing</p>
               <ul class="social-list list">
@@ -291,11 +323,17 @@
               </ul>
             </li>
             <li class="team-list-item">
-              <img
-                class="team-list-img"
-                src="./images/our_team/team_card_4.jpg"
-                alt=""
-              />
+              <picture>
+                
+                  <source srcset="./images/our_team/team-card-desktop-4.jpg 1x, ./images/our_team/team-card-desktop-4@2x.jpg 2x"
+                    media="(min-width:1200px)">
+                <source srcset="./images/our_team/team-card-tablet-4.jpg 1x, ./images/our_team/team-card-tablet-4@2x.jpg 2x"
+                  media="(min-width:768px)">
+                <source srcset="./images/our_team/team-card-mobile-4.jpg 1x, ./images/our_team/team-card-mobile-4@2x.jpg 2x"
+                  media="(max-width:767px)">
+              
+                <img class="team-list-img" src="./images/our_team/team-card-mobile-4.jpg" alt="" />
+              </picture>
               <h3 class="team-list-title">Михаил Ермаков</h3>
               <p class="team-list-subtitle" lang="en">UI Designer</p>
               <ul class="social-list list">
@@ -335,6 +373,8 @@
           </ul>
         </div>
       </section>
+
+      
 
       <!--CUSTOMERS-->
 
@@ -387,7 +427,12 @@
           </ul>
         </div>
       </section>
+
+      
+
     </main>
+
+
 
     <!--FOOTER-->
 
@@ -457,11 +502,16 @@
             </li>
           </ul>
         </div>
+        
         <div class="footer-form-wrapper">
           <div class="footer-wrapper">
             <h4 class="footer-form-title">Подпишитесь на рассылку</h4>
             <form action="#" method="GET" class="form-footer">
-              <input type="email" name="footer-email" required placeholder="E-mail" class="footer-input">
+              <input type="email" 
+              name="footer-email" 
+              required 
+              placeholder="E-mail" 
+              class="footer-input">
             
               <button type="submit" class="btn-footer-form">
                 <span class="footer-btn-text">Подписаться</span> 
@@ -475,8 +525,11 @@
           </div>
           
         </div>
-      </div>
+        </div>
+      
     </footer>
+
+    
 
 <!--MODAL-->
 
@@ -521,12 +574,12 @@
           </label>
                  
            
-           <label class="form-label">Комментарий</label>
+           <label class="form-label">Комментарий
            <textarea name="user-comment"  placeholder="Введите текст" class="form-comment"></textarea>
            <input type="checkbox" name="user-terms" value="accept-policy" 
-           id="user-contract" class="form-checkbox visually-hidden">
+           id="user-contract" class="form-checkbox visually-hidden"></label>
           <label for="user-contract" class="modal-checkbox-label">
-            Соглашаюсь с рассылкой и принимаю
+            Соглашаюсь с рассылкой и принимаю &zwj;
             <a class="contract-link" href="#"> Условия договора</a>
         </label>  
            <button type="submit" class="btn-form">Отправить</button>
@@ -537,6 +590,8 @@
       </div>
     </div>
 
+    <script src="../goit-markup-hw-08/" ></script>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

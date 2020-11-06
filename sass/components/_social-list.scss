@@ -1,10 +1,8 @@
 .social-list {
   display: flex;
   justify-content: space-between;
-  width: 206px;
-  margin-right: 32px;
-  margin-left: 32px;
-  margin-bottom: 30px;
+  justify-content: center;
+  width: 100%;
 
   &-link {
     display: flex;
@@ -31,5 +29,15 @@
   .social-list-link:hover &,
   .social-list-link:focus & {
     fill: #ffffff;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .social-list-link {
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .social-list {
+    margin-bottom: 30px;
   }
 }
